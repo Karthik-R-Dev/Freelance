@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 17px 0;
+}
+
+.top-navbar{
+    background-color: black;
+    padding: 0 190px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: yellow;
+}
