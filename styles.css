@@ -9,13 +9,19 @@ body{
 .navbar{
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.navbar-content:not(:first-child){
     padding: 17px 0;
+}
+.nav-link{
+    position: relative;
+    left: 275px;
 }
 
 .top-navbar{
     background-color: black;
-    padding: 0 190px;
+    padding: 0 290px;
 }
 
 .nav-link {
@@ -26,3 +32,88 @@ body{
 .nav-link:hover{
     color: yellow;
 }
+.navbrand{
+    height: 60px;
+    width: 50px;
+    position: absolute;
+    left: 2%;
+}
+.navbar-content{
+    justify-content: space-between;
+}
+
+/* title */
+.title{
+    position: relative;
+    left: 15%;
+    margin-top: 25%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    
+}
+.subtitle{
+    position: relative;
+    margin-top: 5%;
+    left: 17%;
+}
+.tilte-img{
+    width: 550px;
+    height:500px;
+    position: relative;
+    left: 180px;
+    top: 25px;
+}
+/* .contact-btn{
+    font-size: 20px;
+    padding: 10px 15px;
+    position: relative;
+    left: 48%;
+    top: 10%;
+    border: none;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.contact-btn:hover{
+    color: yellow;
+} */
+
+.contact-btn{
+    border-radius: 5px;
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+    font-size: 22px;
+    padding: 12px 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    position: relative;
+    left: 47%;
+    top: 8%;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .contact-btn span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .contact-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .contact-btn:hover span {
+    padding-right: 25px;
+    color: yellow;
+  }
+  .contact-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
